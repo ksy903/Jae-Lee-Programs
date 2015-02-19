@@ -1,0 +1,68 @@
+p: papa - physical
+d: do --- data-link
+n: not -- network 
+t: trust- transport 
+s: spa -- session
+p: spa -- presentation
+a: spa -- application
+
+RAID 0 - data split evenly, no parity (speed)
+RAID 1 - Exact copy across all storage, no parity (security)
+RAID 2 - bit level, error correction. not used
+RAID 3 - byte lvl, uses dedicated parity disk
+RAID 4 - block lvl, uses dedicated parity disk
+RAID 5 - block lvl stripping, distributed parity
+RAID 6 - just like 5, but uses another parity block. So it has 2 parity blocks.
+
+File Allocation Table(FAT)
+"file system architecture" 
+FAT# - the # is the bit size of the table elements
+
+Power-on self-test(POST)
+process of checking out connected electronic devices, and its firmware
+100-199 = System boards
+200-299 = Memory
+300-399 = Keyboard
+400-499 = Monochrome display
+500-599 = Color/graphics display
+600-699 = Floppy disk or adapter
+700-799 = Math coprocessor
+900-999 = Parallel printer port
+
+theres a lot more, but i think they dont ask over 900s
+
+WINDOWS SERVER
+1) task manager 
+2) in Host file  System32\drivers\etc  to redirect to a hacker site
+3) in C: drive, hidden folder
+4) bad user
+5) on START menu
+6) DNS, Adv TCP/IP, alternate dns if primary fails
+7) group under Computer Manager
+8) firewall inbound rule
+9) Disk Management, Disk drive (E)
+10) DNS PC properties, root hints
+11) Internet Options Security Trusted sites
+12) Internet Options Gen home page
+13) shared folder visible
+14) ipconfig -all
+15) msconfig
+16) Process Explorer
+17) process monitor
+18) run "ncpa.cpl" 
+19) control panel firewall settings, internet options trusted sites
+
+possible names:
+hacAkersite
+spByfolder
+baCdperson
+malZware
+poiEsondns
+terFrorists_group
+haGcker_break&enter
+hHackdrive
+eIvil_bad.root-servers.net
+www.maJlicious_site
+unKtrusted.homepage.com
+baLdfolder$
+

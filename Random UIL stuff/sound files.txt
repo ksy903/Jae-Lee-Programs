@@ -1,0 +1,9 @@
+G G F F E E D2 C C G G A A G2 F F E E D D C2
+C - 261.43
+G - 392.00
+A - 440.00
+F - 349.23
+E - 329.63
+D - 293.66
+
+http://www.phy.mtu.edu/~suits/notefreqs.html

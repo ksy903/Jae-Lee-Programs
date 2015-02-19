@@ -1,0 +1,48 @@
+import java.util.ArrayList; 
+3 import java.util.List; 
+4 
+ 
+5 /* 
+6  The Sieve of Eratosthenes is an algorithm to quickly find all primes 
+7  under 10 million by marking off multiples of primes, as opposed to  
+8  by trial division. 
+9  */ 
+10 
+ 
+11 public class SieveEratosthenes { 
+12     
+13    // prints the list of primes with a default cap of 1000000 
+14    public static void main(String[] args) { 
+15       List<Integer> l = getPrimeArray(1000000); 
+16       System.out.println(l); 
+17    } 
+18     
+19    // returns an ArrayList of prime numbers up to the given limit. 
+20    public static List<Integer> getPrimeArray(int limit) { 
+21       boolean[] sieve = new boolean[limit + 1]; 
+22       List<Integer> primes = new ArrayList<Integer>(limit + 1); 
+23       int p = 2; // first prime 
+24       while (p * p <= limit) { // anything over p^2 will be marked 
+25          sieve[p * p] = true; 
+26          int multiple = p * p; 
+27          // marking off multiples 
+28          while (multiple <= limit) { 
+29             sieve[multiple] = true; 
+30             multiple += p; 
+31          } 
+32          // setting p to the next prime number 
+33          for (int i = p + 1; i <= limit; i++) { 
+34             if (!sieve[i]) { 
+35                p = i; 
+36                break; 
+37             } 
+38          } 
+39       } 
+40       // adding all the indexes that read false 
+41       for (int i = 2; i <= limit; i++) { 
+42          if (!sieve[i]) { 
+43             primes.add(i); 
+44          } 
+45       } 
+46       return primes; 
+47    } 
